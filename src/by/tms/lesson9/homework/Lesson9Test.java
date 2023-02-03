@@ -4,7 +4,7 @@ import by.tms.lesson9.homework.utils.StringUtils;
 
 import java.util.Scanner;
 
-import static by.tms.lesson9.homework.utils.CreateArray.getCharArray;
+import static by.tms.lesson9.homework.utils.ArrayUtil.getCharArray;
 import static by.tms.lesson9.homework.utils.StringUtils.print;
 
 public class Lesson9Test {
@@ -25,12 +25,11 @@ public class Lesson9Test {
             System.out.print("Input task number (0 for exit): ");
 
             int key = scanner.nextInt();
-            char[] tmpArray;
 
             switch (key) {
                 case 1 -> {
                     System.out.print("Input string: ");
-                    tmpArray = getCharArray();
+                    char[] tmpArray = getCharArray();
                     System.out.println("String without \\n:");
                     print(tmpArray);
                     System.out.println("\nString with \\n:");
@@ -39,21 +38,21 @@ public class Lesson9Test {
                 }
                 case 2 -> {
                     System.out.print("Input string: ");
-                    tmpArray = getCharArray();
+                    char[] tmpArray = getCharArray();
                     System.out.print("Are input string [");
                     print(tmpArray);
                     System.out.println("] is blank? -> " + StringUtils.isBlank(tmpArray) + "\n");
                 }
                 case 3 -> {
                     System.out.print("Input string: ");
-                    tmpArray = getCharArray();
+                    char[] tmpArray = getCharArray();
                     System.out.print("Are input string [");
                     print(tmpArray);
                     System.out.println("] is Russian? -> " + StringUtils.isRussian(tmpArray) + "\n");
                 }
                 case 4 -> {
                     System.out.println("Input first string");
-                    tmpArray = getCharArray();
+                    char[] tmpArray = getCharArray();
                     System.out.println("Creat second string");
                     char[] tmpArray2 = getCharArray();
                     System.out.print("Is string [");
@@ -64,7 +63,7 @@ public class Lesson9Test {
                 }
                 case 5 -> {
                     System.out.println("Input string, that contains only numbers: ");
-                    tmpArray = getCharArray();
+                    char[] tmpArray = getCharArray();
                     System.out.println(StringUtils.parseInt(tmpArray));
                     System.out.println();
                 }

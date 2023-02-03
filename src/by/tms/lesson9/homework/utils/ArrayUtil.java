@@ -2,7 +2,7 @@ package by.tms.lesson9.homework.utils;
 
 import java.util.Scanner;
 
-public class CreateArray {
+public class ArrayUtil {
 
     public static char[] getCharArray() {
 
